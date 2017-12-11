@@ -11,8 +11,34 @@
 */
 
 
-div {
-	width: 200px;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.elem-bleu {
 	margin: 5px;
 	background-color: blue;
 }
@@ -23,8 +49,9 @@ div {
 .section-one p {
 	color: red;
 }
-.section-one div {
+.rectangle {
 	height: 100px;
+	width: 200px;
 }
 
 .section-two {
@@ -33,6 +60,7 @@ div {
 .section-two p {
 	color: blue;
 }
-.section-two div {
+.carre {
 	height: 200px;
+	width: 200px;
 }
