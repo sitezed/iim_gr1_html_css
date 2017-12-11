@@ -1,0 +1,52 @@
+header {
+	height: 90px;
+	background-color: #16a085; /* couleurs en CSS soit en code hexadecimal, soit en nom de couleur direct, soit en RGB */
+}
+
+nav {
+	height: 200px;
+	background-color: blue;
+	background-image: url('http://lorempicsum.com/futurama/627/200/3');
+	background-image: url('../images/bird.jpg'); /* en reecrivant cette propriété, cela a écrasé la précédente */
+	/* pour acceder à l'image, je dois renseigner le chemin relatif.
+		dans ce cas, bird.jpeg se trouve dans le dossier images
+		lui mëme, dans le dossier parent à structure.css
+	*/
+}
+
+section {
+	background-color: #e67e22;
+}
+/* j'applique le style à TOUS les  éléments div */
+div {
+	width: 200px;
+	height: 200px;
+	background-color: blue;
+	margin-top: 5px; /* marge en haut de 5px */
+}
+/* Les classes permettent d'appliquer un style à un groupe d'éléments isolés */
+/* */
+.bouge-a-droite {
+	position: relative;
+	left: 100px;
+}
+
+/* les IDs permettent de styliser un élément unique */
+#coco {
+	background-color: yellow;
+}
+
+/*
+Pour styliser un groupe d'éléments (plusieurs balises nommées), nous appliquons une classe côté HTML et nous la selectionnons avec "." côté CSS.
+Exemple :
+<div class="nom-de-classe"></div> côté HTML
+.nom-de-classe{} côté CSS
+
+Pour styliser un élément unique, nous utilisons les IDs. id="" côté HTML, # côté CSS
+Exemple : 
+<div id="nom-perso"></div> côté HTML
+#nom-perso{} côté CSS
+
+ATTENTION : Les IDs doivent être unique pour chaque page, je ne dois pas donner le même à 2 éléments HTML
+
+*/

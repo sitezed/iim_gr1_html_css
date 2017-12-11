@@ -1,0 +1,38 @@
+/*
+- Faire en sorte que le 1er section soit de couleur VERTE
+- Que la couleur du texte du 1er P soit rouge
+- Que les 2 DIVs du 1er section soit un rectangle bleu (200px/100px) avec marge de 5px
+*/
+
+/*
+- Faire en sorte que le 2nd section soit de couleur Rouge
+- Que la couleur du texte du 2nd P soit bleu
+- Que les 2 DIVs du 2eme section soit un carre bleu (200px/200px) avec marge de 5px
+*/
+
+
+div {
+	width: 200px;
+	margin: 5px;
+	background-color: blue;
+}
+
+.section-one {
+	background-color: green;
+}
+.section-one p {
+	color: red;
+}
+.section-one div {
+	height: 100px;
+}
+
+.section-two {
+	background-color: red;
+}
+.section-two p {
+	color: blue;
+}
+.section-two div {
+	height: 200px;
+}
