@@ -1,7 +1,10 @@
 .cadre{
+	position: relative;
 	margin: 20px;
 	height: 300px;
 	width: 60%;
+	margin-left: auto;
+	margin-right: auto;
 	border: 2px solid black;
 }
 
@@ -12,14 +15,21 @@
 
 .rouge {
 	background-color: red;
+	position: relative;
+	top: 100px; /* je m'éloigne de 100px en partant du haut, par rapport à la position initiale */
+	right: 200px; /* je m'éloigne de 200px en partant de la droite, par rapport à la position initiale */
 }
 
 .bleu {
 	background-color: blue;
+	position: absolute;
+	top: 100px; /* je m'éloigne de 100px, en prenant pour point de départ le bord haut de mon parent qui possède une position. Si aucun de mes parents ne possède de position, je prend <body> comme point de départ */
+	right: 200px; /* même règle que pour le top, mais à partir de la droite */
 }
 
 .jaune {
 	background-color: yellow;
+	position: fixed;
 }
 
 .grand{
