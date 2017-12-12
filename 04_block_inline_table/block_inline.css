@@ -1,3 +1,19 @@
+/* 
+les éléments HTML disposent de plusieurs types différents :
+- block >> éléments de type block, exemple les <DIV> et les <SECTION>, 
+servent à contenir d'autres éléments. Accepte les propriétés de dimensions comme width et height. 
+ils s'agencent les uns en dessous des autres.
+- inline >> éléments de type texte, exemple les <A href>,les <SPAN>, 
+s'agencent les uns à côté des autres, n'acceptent pas les propriétés de dimensions 
+comme width et height.
+- inline-block >> s'agencent les uns à côté des autres ET acceptent toutes les propriétés
+de type block et de type inline.
+- flex >> nouveau type pour faire de l'agencement
+
+Conclusion : chaque fois qu'une propriété ne fonctionne pas sur un élément, 
+se poser la question à savoir dans quel type d'élément nous agissons.
+*/
+
 section {
 	background-color: #e67e22;
 }
