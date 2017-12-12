@@ -2,8 +2,77 @@ section {
 	background-color: #e67e22;
 }
 div {
-	width: 200px;
-	height: 200px;
 	background-color: blue;
 	margin: 5px;
+}
+
+span{
+	background-color: red;
+}
+
+img{
+	background-color: purple;
+}
+
+.menu-one a{
+	display: inline-block;
+	background-color: green;
+	color: white;
+	width: 100px;
+	height: 50px;
+	text-align: center;
+	line-height: 50px;
+	margin: 5px;
+}
+
+.menu-two a{
+	display: block;
+	color: white;
+	float: left;
+	background-color: purple;
+	width: 100px;
+	height: 50px;
+	text-align: center;
+	line-height: 50px;
+	margin: 5px;
+}
+.clearfix {
+	clear: left; /* je desactive mes float */
+}
+
+.menu-three {
+	display: flex;
+	flex-direction: row;
+}
+
+.menu-three div{
+	width: 100px;
+	height: 50px;
+	text-align: center;
+	line-height: 50px;
+	margin: 5px;
+}
+.menu-three div a{
+	color: white;
+}
+
+.lien-a {
+	order: 3;
+}
+.lien-b {
+	order: 4;
+}
+.lien-c {
+	order: 1;
+}
+.lien-d {
+	order: 2;
+}
+
+ul{
+	background-color: yellow;
+}
+
+li{
+	background-color: tomato;
 }

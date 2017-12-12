@@ -1,0 +1,16 @@
+html{
+	height: 100%;
+}
+body{
+	height: 100%;
+	background-image: url('../dbz.jpg');
+	/* la propriété background-size permet d'ajuster l'image en background. 
+	cover : va conserver la proportion de l'image 
+	mais la découper en fonction de la taille de l'écran (préférez cette option)
+	100% 100% : correspond à un étirage vertical de 100% et un étirage horizontal de 100%. 
+	ATTENTION : mettre un height 100% sur HTML et sur BODY pour utiliser ces valeurs.
+	contain : cette valeur met l'image entière en conservant sa taille d'origine;
+	*/
+	background-size: cover; 
+	background-repeat: no-repeat;
+}
