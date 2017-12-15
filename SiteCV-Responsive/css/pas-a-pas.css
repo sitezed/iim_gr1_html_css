@@ -1,0 +1,79 @@
+/******************** Etape 1 : Structure ********************/
+h1,h2,h3,p,a,ul,li{
+margin: 0;
+padding: 0;
+text-decoration: none;
+}
+html, body {
+margin: 0;
+font-family: 'Roboto', sans-serif;
+font-size: 0.9em;
+}
+header{
+background: #F2F2F2;
+padding: 0 0 0.3em 0;
+margin: 0 0 2em 0;
+border-bottom: 1px solid #c0c0c0;
+}
+section{ min-height: 700px; }
+footer{ /* zone du bas */
+background: #F2F2F2; /* fond */
+border-top: 1px solid #c0c0c0; /* bordure en haut */
+margin: 2em 0 0 0; /* marge du dessus */
+text-align: center; /* centrer le texte */
+padding: 20px 0; /* marge intérieur */
+}
+.conteneur{
+max-width: 1170px;
+margin: 0 auto;
+border: 1px dotted;
+}
+ 
+/******************** Etape 2 : Zones ********************/
+.clear{
+clear: both;
+}
+.haut-gauche{
+float: left;
+width: 70%;
+background: #074eee;
+}
+.haut-droite{
+float: right;
+width: 25%;
+height: 75px;
+background: #bcbe00; 
+}
+nav{
+margin: 0;
+text-align: center;
+background: #fda500;
+}
+.milieu-haut-gauche{
+float: left;
+width: 30%;
+background: #074eee;
+}
+.milieu-haut-droite{
+float: left;
+width: 70%;
+font-size: 1.2em;
+vertical-align: middle;
+display: table; 
+line-height: 1.3em;
+text-align: center;
+height: 20vh; 
+background: #bcbe00; 
+}
+.milieu-gauche{
+float: left;
+width: 60%;
+margin: 1.5em 0 1.5em 0;
+background: #074eee;
+}
+.milieu-droite{
+float: right;
+width: 30%;
+margin: 1.5em 0 1.5em 0;
+background: #bcbe00; 
+}
