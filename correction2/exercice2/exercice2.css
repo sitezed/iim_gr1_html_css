@@ -47,69 +47,105 @@ table {
 	border-spacing: 0;
 }
 
-/*
-1. Posez votre structure HTML de base
-2. Posez le HTML du header. header>div>img
-3. styliser notre image et header 
-pour ressembler à la maquette
-*/
-header{
+/* Fin du reset CSS */
+html{
+	height: 100%;
+}
+body{
+	height: 100%;
+}
+.bleu{
+	background-color: blue;
+}
+.orange{
 	background-color: orange;
 }
-header div {
-	background-color: red;
+.vert{
+	background-color: #bcbe00;
 }
-header img{
-	display:block;
-	width: 200px;
-}
-.menu-haut{
+header {
+	background-color: #F2F2F2;
+	height: 120px;
 	display: flex;
 	flex-direction: row;
-	justify-content: space-around;
+	justify-content: center;
+	border-bottom: 2px solid grey;
 }
-.item{
-	height: 50px;
-	width: 100px;
-	line-height: 50px; 
-	text-align: center;
-	background-color: tomato;
+header > div{
+	height: 100%;
+	width: 60%;
 }
-.item a {
-	color: white;
+nav{
+	width: 100%;
+	height: 20%;
+}
+.haut{
+	display: flex;
+	justify-content: space-between;
+	height: 80%;
+}
+.haut-gauche{
+	width: 75%;
+	height: 100%;
+}
+.haut-droite{
+	width: 20%;
+	height: 100%;
 }
 
-/* je selectionne les section qui POSSÈDENT  
-la classe container
-*/
-section.container {
+section.container{
 	display: flex;
-	flex-direction: row;
+	justify-content: center;
+}
+
+section.cadre{
+	margin-top: 20px;
+	width: 60%;
+	border: 1px dotted black;
+}
+
+.milieu-gauche{
+	width: 30%;
+	height: 300px;
+}
+.milieu-droite{
+	width: 70%;
+	height: 500px;
+}
+.bas-gauche{
+	width: 70%;
+	height: 20px;
+}
+.bas-droite{
+	width: 20%;
+	height: 20px;
+}
+
+.aligner-a{
+	display: flex;
+}
+.aligner-b{
+	margin-top: 20px;
+	display: flex;
 	justify-content: space-between;
 }
-/* les ASIDE à l'intérieur du section class container*/
-section.container aside {
-	width: 200px;
-	height: 600px;
-	background-color: silver;
+footer {
+	background-color: #F2F2F2;
+	height: 80px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin-top: 30px;
+}
+footer > div{
+	height: 30%;
+	width: 60%;
+	border: 1px dotted black;
+	margin-top: 25px;
 }
 
-section.container article {
-	width: 400px;
-	height: 300px;
-	background-color: purple;
-}
-footer{
-	background-color: blue;
-	height: 80px;
-	text-align: center;
-	line-height: 80px;
-}
-footer a {
-	margin-left: 30px;
-	color: white;
-	font-size: 20px;
-}
+
+
 
 
 

@@ -46,70 +46,116 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-
-/*
-1. Posez votre structure HTML de base
-2. Posez le HTML du header. header>div>img
-3. styliser notre image et header 
-pour ressembler à la maquette
-*/
+/*------------------------------ END RESET ------------------*/
 header{
+	display: flex;
+	justify-content: center;
+	background: silver;
+	height: 120px;
+	border-bottom: 1px solid;
+}
+/*  Je selectionne l'enfant 
+div de 1er niveau à header*/
+header > div{
+	border: 2px solid black;
+	height: 100%;
+	width: 800px;
+}
+.bleu{
+	background-color: blue;
+}
+.vert{
+	background-color: green;
+}
+.orange{
 	background-color: orange;
 }
-header div {
-	background-color: red;
+/* J'applique à haut-gauche ET haut-droite */
+.haut-gauche,
+.haut-droite{
+	height: 80px;
 }
-header img{
-	display:block;
+.haut-gauche{
+	width: 500px;
+}
+.haut-droite{
 	width: 200px;
 }
-.menu-haut{
+nav{
+	height: 20px;
+}
+.haut{
 	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
-}
-.item{
-	height: 50px;
-	width: 100px;
-	line-height: 50px; 
-	text-align: center;
-	background-color: tomato;
-}
-.item a {
-	color: white;
-}
-
-/* je selectionne les section qui POSSÈDENT  
-la classe container
-*/
-section.container {
-	display: flex;
-	flex-direction: row;
 	justify-content: space-between;
 }
-/* les ASIDE à l'intérieur du section class container*/
-section.container aside {
+.milieu-gauche{
+	height: 300px;
+	width: 300px;
+}
+.milieu-droite{
+	height: 500px;
+	width: 500px;
+}
+.aligner-a{
+	margin-top: 20px;
+	display: flex;
+	justify-content: center;
+}
+.bas-gauche{
+	height: 60px;
 	width: 200px;
-	height: 600px;
-	background-color: silver;
+}
+.bas-droite{
+	height: 60px;
+	width: 500px;
+}
+.aligner-b{
+	margin-top: 20px;
+	display: flex;
+	justify-content: space-between;
+}
+.cadre-milieu{
+	border: 1px solid black;
+	width: 800px;
+}
+.parent-du-cadre{
+	display: flex;
+	justify-content: center;
 }
 
-section.container article {
-	width: 400px;
-	height: 300px;
-	background-color: purple;
-}
 footer{
-	background-color: blue;
-	height: 80px;
-	text-align: center;
-	line-height: 80px;
+	margin-top: 50px;
+	background-color: silver;
+	height: 100px;
+	display: flex;
+	justify-content: center;
 }
-footer a {
-	margin-left: 30px;
-	color: white;
-	font-size: 20px;
+footer > div{
+	width: 800px;
+	height: 50px;
+	border: 1px solid black;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
