@@ -1,0 +1,29 @@
+.carre{
+	width: 800px;
+	height: 800px;
+	background-color: purple;
+}
+.liste {
+	display: none; /* je fais disparaitre la div de base */
+}
+
+/* Version mobile */
+/* 
+tant que mon ecran est inférieur à 400px de large, 
+j'applique ce style
+*/
+@media screen and (max-width: 400px) {
+  /* tout le style se trouvant dans cette zone 
+	ne sera appliqué que si l'écran ne 
+	depasse pas 400px de large
+  */
+
+.carre{
+	display: none;
+}
+.liste{
+	display: block;
+}
+
+  /* fin de la zone 400px max */
+}

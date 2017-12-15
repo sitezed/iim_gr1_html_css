@@ -111,6 +111,24 @@ footer a {
 	font-size: 20px;
 }
 
+/* Version mobile */
+/* 
+tant que mon ecran est inférieur à 400px de large, 
+j'applique ce style
+*/
+@media screen and (max-width: 400px) {
+  /* tout le style se trouvant dans cette zone 
+	ne sera appliqué que si l'écran ne 
+	depasse pas 400px de large
+  */
+
+  section.container article {
+	background-color: yellow;
+}
+
+  /* fin de la zone 400px max */
+}
+
 
 
 
